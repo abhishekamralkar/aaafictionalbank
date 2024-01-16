@@ -5,11 +5,11 @@ import "fmt"
 var balance float64 = 0
 
 func main() {
-	fmt.Println(getBalance())
+	fmt.Printf("The current balance is %.02f\n", getBalance())
 	deposit(1000)
-	fmt.Println(getBalance())
+	fmt.Printf("Balance after deposit of % .2f%.02f\n", getBalance())
 	withdraw(200)
-	fmt.Println(getBalance())
+	fmt.Printf("Balance after the withdrawal %.02f\n", getBalance())
 }
 
 func getBalance() float64 {
